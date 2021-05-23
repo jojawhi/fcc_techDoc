@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
 
 :root {
+    --main-50: hsl(185, 40%, 94%);
     --main-100: hsl(185, 90%, 75%);
-    --main-200: hsl(185, 100%, 40%);
-    --main-300: hsl(185, 90%, 15%);
+    --main-200: hsl(185, 80%, 40%);
+    --main-300: hsl(185, 80%, 15%);
 }
 
 *,
@@ -15,20 +16,70 @@
 html {
     font-family: "Poppins", sans-serif;
     background: #FCFBFA;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 24% 1fr;
+    grid-template-areas:
+        "nav content";
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    padding-left: 1.5rem;
+    border-right: 2px solid var(--main-300);
+    
+}
+
+#nav-header-text {
+    color: var(--main-200);
+    font-size: 1.75rem;
 }
 
 nav a {
     display: block;
+    color: var(--main-300);
+    line-height: 2.5rem;
     text-decoration: none;
+    border-top: 2px solid var(--main-300);
+    transition: 300ms ease-in-out;
+}
+
+nav a:hover {
+    color: var(--main-200);
+}
+
+#References-nav {
+    border-bottom: 2px solid var(--main-300);
 }
 
 main {
-    padding: 2rem;
+    padding: 0 3rem 1rem 2rem;
+}
+
+.header-text {
+    color: var(--main-200);
+    font-size: 1.75rem;
+}
+
+.section-text {
+    color: var(--main-300);
+    margin-left: 2rem;
+}
+
+section ul {
+    color: var(--main-300);
+    margin-left: 2rem;
 }
 
 .code-container {
-    background: lightgray;
+    background: var(--main-50);
     padding: 1rem;
+    margin: 0 4rem 0 4rem;
     border-radius: 4px;
 }
 
