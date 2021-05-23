@@ -15,10 +15,9 @@ main {
     padding: 2rem;
 }
 
-code {
+.code-container {
     background: lightgray;
+    padding: 1rem;
+    border-radius: 4px;
 }
 
-.section-bullet {
-    list-style: circle;
-}
