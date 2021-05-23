@@ -206,7 +206,7 @@
                 <div class="code-container">
                     <code class="code-text">
                         if (true) { <br/>
-                            var x = 5; <br/>
+                        <span class="code-tab"></span>var x = 5; <br/>
                         } <br/>
                         console.log(x); // 5
                     </code>
@@ -217,7 +217,7 @@
                 <div class="code-container">
                     <code class="code-text">
                         if (true) { <br/>
-                            let y = 5; <br/>
+                        <span class="code-tab"></span>let y = 5; <br/>
                         } <br/>
                         console.log(y);
                         // ReferenceError: y is not
@@ -272,9 +272,9 @@
                         const f = 5; <br/>
                         // THIS WILL CAUSE AN ERROR ALSO <br/>
                         function f() {<br/>
-                            const g = 5; <br/>
-                            var g; <br/>
-                            //statements<br/>
+                        <span class="code-tab"></span>const g = 5; <br/>
+                        <span class="code-tab"></span>var g; <br/>
+                        <span class="code-tab"></span>//statements<br/>
                         }
                     </code>
                 </div>
@@ -344,9 +344,9 @@
                 <div class="code-container">
                     <code class="code-text">
                         if (condition) { <br/>
-                            statement_1; <br/>
+                        <span class="code-tab"></span>statement_1; <br/>
                         } else {<br/>
-                            statement_2;<br/> 
+                        <span class="code-tab"></span>statement_2;<br/> 
                         }
                     </code>
                 </div>
@@ -363,13 +363,13 @@
                 <div class="code-container">
                     <code class="code-text">
                         if (condition_1) { <br/>
-                            statement_1; <br/>
+                        <span class="code-tab"></span>statement_1; <br/>
                         } else if (condition_2) {<br/> 
-                            statement_2;<br/>
+                        <span class="code-tab"></span>statement_2;<br/>
                         } else if (condition_n) {<br/> 
-                            statement_n; <br/>
+                        <span class="code-tab"></span>statement_n; <br/>
                         } else { <br/>
-                            statement_last; <br/>
+                        <span class="code-tab"></span>statement_last; <br/>
                         }
                     </code>
                 </div>
@@ -382,11 +382,11 @@
                 <div class="code-container">
                     <code class="code-text">
                         if (condition) { <br/>
-                            statement_1_runs_if_condition_is_true;<br/>
-                            statement_2_runs_if_condition_is_true; <br/>
+                        <span class="code-tab"></span>statement_1_runs_if_condition_is_true;<br/>
+                        <span class="code-tab"></span>statement_2_runs_if_condition_is_true; <br/>
                         } else {<br/>
-                            statement_3_runs_if_condition_is_false;<br/>
-                            statement_4_runs_if_condition_is_false; <br/>
+                        <span class="code-tab"></span>statement_3_runs_if_condition_is_false;<br/>
+                        <span class="code-tab"></span>statement_4_runs_if_condition_is_false; <br/>
                         }
                     </code>
                 </div>
@@ -442,7 +442,8 @@
                         var n = 0; <br/>
                         var x = 0; <br/>
                         while (n < 3) { <br/>
-                            n++; x += n; <br/>
+                        <span class="code-tab"></span>n++; <br/>
+                        <span class="code-tab"></span>x += n; <br/>
                         }
                     </code>
                 </div>

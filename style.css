@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
 
+:root {
+    --main-100: hsl(185, 90%, 75%);
+    --main-200: hsl(185, 100%, 40%);
+    --main-300: hsl(185, 90%, 15%);
+}
+
 *,
 *::before,
 *::after {
@@ -11,6 +17,11 @@ html {
     background: #FCFBFA;
 }
 
+nav a {
+    display: block;
+    text-decoration: none;
+}
+
 main {
     padding: 2rem;
 }
@@ -19,5 +30,10 @@ main {
     background: lightgray;
     padding: 1rem;
     border-radius: 4px;
+}
+
+.code-tab {
+    display: inline-block;
+    width: 1rem;
 }
 
