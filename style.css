@@ -32,8 +32,12 @@ body {
 #navbar {
     grid-area: nav;
     position: fixed;
-    padding-left: 1.5rem;
-    
+    height: 100%;
+    border-right: 2px solid var(--main-300);
+}
+
+#nav-header {
+    padding: 0 1rem 0 1rem;
 }
 
 #nav-header-text {
@@ -41,16 +45,28 @@ body {
     font-size: 1.75rem;
 }
 
-nav a {
+#nav-list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.nav-item {
+    width: 100%;
+    border-top: 2px solid var(--main-300);
+}
+
+.nav-link {
     display: block;
+    width: 100%;
+    margin-left: 1rem;
     color: var(--main-300);
     line-height: 2.5rem;
     text-decoration: none;
-    border-top: 2px solid var(--main-300);
     transition: 300ms ease-in-out;
 }
 
-nav a:hover {
+.nav-link:hover {
     color: var(--main-200);
 }
 
@@ -61,7 +77,6 @@ nav a:hover {
 main {
     grid-area: content;
     padding: 0 3rem 1rem 2rem;
-    border-left: 2px solid var(--main-300);
 }
 
 .header-text {
